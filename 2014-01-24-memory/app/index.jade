@@ -1,0 +1,60 @@
+doctype html
+//[if IE 9]><html class="lt-ie10" lang="en" > <![endif]
+html(class='no-js' lang='en')
+
+  head
+    meta(charset='utf-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Memory Game
+    link(rel='stylesheet', href='css/normalize.css')
+    link(rel='stylesheet', href='css/foundation.css')
+    link(rel='stylesheet', href='css/app.css')
+    script(src='js/vendor/modernizr.js')
+  body
+    .row
+      .small-12.columns.text-center
+        .panel
+          h1 Memory Game
+  
+    .row
+      .small-4.columns
+        &nbsp;
+      .small-4.small-centered.large-4.large-centered.columns
+        #buttons
+          ul.button-group
+            li
+              button.radius#play Play
+            li
+              button.radius#reset Reset
+      .small-4.columns
+        &nbsp;
+   
+     .row
+       .small-3.columns
+         &nbsp;
+       .small-6.small-centered.large-6.large-centered.columns
+         #gameDivs
+            -for(var i = 0; i < 4; i++)
+              .divs
+                &nbsp;
+            br
+            -for(var i = 0; i < 4; i++)
+              .divs
+                &nbsp;
+            br
+            -for(var i = 0; i < 4; i++)
+              .divs
+                &nbsp;
+            br
+            -for(var i = 0; i < 4; i++)
+              .divs
+                &nbsp;
+            br
+       .small-3.columns
+         &nbsp;
+
+
+    script(src='js/vendor/jquery.js')
+    script(src='js/vendor/foundation.js')
+    script(src='js/source/main.js')
+    script $(document).foundation();

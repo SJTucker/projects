@@ -1,0 +1,32 @@
+(function(){
+  
+  'use strict';
+
+  $(document).ready(init);
+
+  function init(){
+    $('#play').click(play);
+  }
+
+  var alphabet = ['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+  console.log(alphabet);
+  var lettersArray;
+  for(var i = 0; i < 2; i++){
+    for(i = 0; i < 10; i++){
+      var letters= alphabet[Math.floor(Math.random() * 24)];
+      lettersArray += letters;
+    }
+  }
+
+  console.log(lettersArray);
+
+
+  function play(){
+    
+  }
+
+
+
+
+
+})();
